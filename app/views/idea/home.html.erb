@@ -1,0 +1,22 @@
+<div class = "container">
+  <div class="page-header">
+    <h1>Ideas</h1>
+  </div>
+  <div class="row">
+    <% @ideas.each do |idea| %>
+      <div class="ideaObject">
+        <div class="media">
+          <div class="media-left">
+            <a href="/idea/<%=idea.id%>">
+              <img class="media-object thumbnail" src="<%=idea.image%>" alt="Idea" width="100px" height="100px">
+            </a>
+          </div>
+          <div class="media-right">
+            <p class="media-content"><%=idea.idea%></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <a href="/newidea">New Idea</a>
+</div>

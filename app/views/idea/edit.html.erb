@@ -1,0 +1,13 @@
+<div class = "container editIdea">
+  <h1 class="header editHeader">Edit Idea</h1>
+  <canvas id="myCanvas" width="400" height="400" style="border:1px solid #c3c3c3">Canvas Not Supported</canvas>
+  <textarea id="ideacontent" rows="4" cols="50" placeholder="Your Idea Here"><%=@idea.idea%></textarea>
+  <div class="row">
+    <div class="btn btn-default submitIdea">Save</div>
+    <a href="/delete/<%=@idea.id%>">Delete</a>
+    <br>
+    <br>
+    <a href="/">Home</a>
+  </div>
+  <img src="<%=@idea.image%>" alt="<%=@idea.id%>" style="visibility:hidden">
+</div>

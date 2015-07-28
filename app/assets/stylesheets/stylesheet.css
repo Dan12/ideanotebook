@@ -1,0 +1,25 @@
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+canvas {
+  cursor: pointer;
+}
+
+.media-content {
+  max-width: 300px;
+}
+
+.row{
+  margin: 0;
+}
+
+.ideaObject{
+  border-bottom: 1px solid lightgray;
+  margin: 10px 0 20px;
+}
+
+.container {
+  margin-bottom: 30px;
+}
